@@ -1,4 +1,4 @@
-import tomllib
+import tomli
 from pathlib import Path
 
 CONFIG_PATH = Path("config/settings.toml")
@@ -8,4 +8,4 @@ def load_config() -> dict:
         raise FileNotFoundError("settings.toml not found")
 
     with CONFIG_PATH.open("rb") as f:
-        return tomllib.load(f)
+        return tomli.load(f)
