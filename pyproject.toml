@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "infra-capacity-api"
+version = "0.1.0"
+description = "FastAPI service exposing infra metrics"
+authors = ["You"]
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = "^0.29.0"
+prometheus-client = "^0.20.0"
+
+[tool.poetry.group.dev.dependencies]
+httpx = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
